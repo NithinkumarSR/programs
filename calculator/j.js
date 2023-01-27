@@ -90,7 +90,7 @@ function btP(){
     document.getElementById("display").innerHTML=b;
 }
 function btD(){
-    let a=document.getElementById("b%").value;
+    let a=document.getElementById("b/").value;
     b+=a;
     document.getElementById("display").innerHTML=b;
 }
@@ -113,7 +113,7 @@ function ans(){
         j++;
         res=res-Number(arr[j]);
       }
-      else if(b.charAt(i)=='%'){
+      else if(b.charAt(i)=='/'){
         j++;
         res=res/Number(arr[j]);
       }
@@ -128,5 +128,7 @@ function btC(){
     document.getElementById("display").innerHTML=0;
     b='';
     arr.splice(0,arr.length);
+    x=0;
 }
+
 //.
