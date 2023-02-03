@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    padding: 10px;
+    text-align: center;
+}
+#again{
+   cursor: pointer;
+    position: absolute;
+    left: 10px;
+    top:40px;
+    padding: 20px;
+ background-color: black;
+    color: white;
+    font-size: 30px;
+}
+#ap{
+    color: aliceblue;
+     font-size: 25px;
+}
+.guess{
+    margin-top: 50px;
+    font-size: 60px;
+}
+.line{
+    margin-top: 145px;
+    border: 2px solid black;
+}
+#ans{
+    border: 2px solid black;
+    position: absolute;
+    top: 225px;
+    width: 90px;
+    left: 700px;
+    height: 90px;
+    font-size: 30px;
+    text-align: center;
+  
+}
+.input{
+    border: 2px solid black;
+    position: absolute;
+    left: 50px;
+    top: 400px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+.check{
+    position: absolute;
+    left: 50px;
+    top: 550px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    font-size: 30px;
+}
+.dis{
+    font-size: 50px;
+    position: absolute;
+    left: 1000px;
+    top: 400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bt{
+    font-size: 30px;
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.score{
+    position: absolute;
+    left: 1000px;
+    top:500px ;
+}
+#score{
+    position: absolute;
+    left: 1100px;
+    top:495px ;
+    font-size: 30px;
+}
+.high{
+    position: absolute;
+    left: 1000px;
+    top:600px ;
+}
+#high{
+    position: absolute;
+    left: 1200px;
+    top:600px ;
+    font-size: 30px;
+} 
+.s{
+    position: absolute;
+    top: 450px;
+    font-size: 50px;
+    left:450px ;
+}
+
+
