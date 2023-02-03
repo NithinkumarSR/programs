@@ -305,4 +305,22 @@
 // }
 // console.log(tip);
 // console.log(totaltip);
-// sdferg
+                            // min max in array
+ const calfun=function(t1,t2){
+const ab=t1 .concat(t2);
+let min=ab[0];
+let max=ab[0];
+for(let i=0;i<ab.length;i++){
+        if(max<ab[i]){
+                max=ab[i];
+        }
+        if(min>ab[i]){
+                min=ab[i];
+        }
+}
+console.log(`min is ${min} and max is ${max}`);
+return max-min;
+ }                                        
+const a=[1,2,4,6];
+const b=[8,9,10];
+console.log(calfun(a,b));
