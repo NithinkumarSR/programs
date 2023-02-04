@@ -6,7 +6,7 @@ document.querySelector('.check').addEventListener('click',function(){
  console.log(s);
     if(a==ran){
         document.querySelector('.dis').textContent=''
-        document.querySelector('.s').innerHTML='correct';
+        document.querySelector('.s').innerHTML='win the game';
     }
     else if(s==0){
         document.querySelector('.dis').textContent=''
