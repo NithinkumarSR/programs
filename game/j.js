@@ -2,15 +2,13 @@
 console.log(document.querySelector('.input').value);
 document.querySelector('.check').addEventListener('click',function(){
     let a=document.querySelector('.input').value;
-    document.querySelector('#ans').value=a;
+    if(ran==a){
+        document.querySelector('#ans').value=ran;
+    }
 });
-function ran(){
-}
-// console.log(ran());
-document.querySelector('#again').addEventListener('click',function()
-{
-    (Math.trunc(Math.random()*6)+1);
+let ran;
+document.querySelector('#again').addEventListener('click',function(){
+     ran=Math.trunc(Math.random()*6)+1;
+})
 
-});
-    
 
