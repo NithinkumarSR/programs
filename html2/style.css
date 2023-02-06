@@ -1,0 +1,19 @@
+.space{
+    margin-top: 50px;
+    border-radius:120px;
+   display: flex;
+   justify-content: space-between ;
+   margin-left: 300px;
+  margin-right: 200px;
+ height: 60px;
+}
+.modal{
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* .m2 {
+    margin-left: 100px;
+}
+.m3{
+    margin-left: 200px;
+} */
