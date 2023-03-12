@@ -1,0 +1,38 @@
+<!-- <html>
+    <head>
+        <title>ksr college</title>
+        
+    </head>
+    
+    <body>
+      <h1> java script </h1>
+        <script src="/html2/js.js"></script>
+    </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<style>
+.hidden1{
+display:none;
+}
+</style>
+<body>
+
+<p class="myP">This is a p element.</p>
+
+<button type="button"  class="btn">Hide content of p</button>
+<button type="button" class="bt">display</button>
+
+<script>
+const p=document.querySelector('.myP');
+const btn=document.querySelector('.btn');
+btn.addEventListener('click',function(){
+p.classList.add('hidden1');
+});
+document.querySelector('.bt').addEventListener('click',function(){
+    p.classList.remove('hidden1');
+});
+</script>
+
+</body>
+</html>

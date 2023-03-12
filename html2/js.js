@@ -27,7 +27,7 @@
 // let weight1=92;
 // let heigth1=1.95;
 // let bmi1=(weight1/heigth1)**2;
-// let a=bmi>bmi1;
+// let a=bmi>=bmi;
 // console.log(a);
 // let weight=95;
 // let heigth=1.88;

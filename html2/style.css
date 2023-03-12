@@ -11,9 +11,12 @@
     border-radius: 10px;
     cursor: pointer;
 }
-/* .m2 {
-    margin-left: 100px;
+.hidden{
+    display: none;
 }
-.m3{
-    margin-left: 200px;
-} */
+.para{
+    margin-left:70px ;
+   border: solid black 2px;
+    height: 370px;
+    width: 500px;
+}
