@@ -12,7 +12,16 @@ a[i].addEventListener('click',function(){
 // });
 const body=document.querySelector('html');
 const para=document.querySelector('.para');
-para.addEventListener('click',function(){
- para.classList.add('hidden');
- console.log("hi");
+const hide=function(){
+  para.classList.add('hidden');
+ };
+ document.querySelector('.para').addEventListener('click',function(){
+  hide();
+ });
+document.addEventListener('keydown',function(e){
+  if(e.key==="Enter"){
+    if(!para.classList.contains('hidden')){
+      hide();
+    }
+  }
 })

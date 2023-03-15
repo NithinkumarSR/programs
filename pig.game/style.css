@@ -1,0 +1,77 @@
+*{
+    padding: 0%;
+    margin: 0%;
+   
+}
+body{
+    background-color: rgb(97, 61, 94);
+}
+.player{
+    position: relative;
+   margin-top: 100px;
+    margin-left: 400px;
+    border: solid black 1px;
+    border-radius: 10px;
+    height: 700px;
+    display: flex;
+    width: 800px;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: 100px 100px 0px 120px; */
+}
+.p1{
+    /* position: absolute; */
+    /* padding: 80px 50px 0px 0px;  */
+    width: 50%;
+    border-bottom-left-radius:10px;
+    border-top-left-radius:10px;
+    background-color: rgb(165, 119, 119);
+    /* margin-top: ; */
+}
+.p2{
+    /* position: absolute; */
+    /* padding: 80px 0px 50px 0px;  */
+    width: 50%;
+    border-bottom-right-radius:10px;
+    border-top-right-radius:10px;
+    background-color: rgb(121, 120, 133);
+}
+.pl1{
+    margin-top: 50px;
+    margin-left: 100px;
+    /* margin-bottom: 50px; */
+}
+.pl2{
+    margin-top: 50px;
+    margin-left: 140px;
+}
+.disp1{
+    font-size: 50px;
+    margin: 50px 0px 0px 150px;
+}
+.disp2{
+    font-size: 50px;
+    margin: 50px 0px 0px 150px;
+}
+.dice{
+    width: 100px;
+    height: 100px;
+}
+.input{
+   /* padding-left:765px; */
+   position: absolute;
+  top: 200px;
+   /* right: 100%; */
+   /* bottom: 50%; */
+   left: 350px;
+}
+.new{
+    position: absolute;
+    top: 20px;
+    left: 320px;
+}
+.roll{
+    position: absolute;
+    left :320px;
+    top:450px;
+}
