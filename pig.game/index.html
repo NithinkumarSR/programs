@@ -10,21 +10,35 @@
 <body>
     <div class="player">
         <div class="new">
-            <input type="submit" value="New Game" style="width: 150px; height: 40px; border-radius: 10px; cursor: pointer;"><br></div>
-        <div class="input">
-            <input type="text" class="dice"> 
+            <input type="submit" class="n" value="New Game" style="width: 150px; height: 40px; border-radius: 10px; cursor: pointer;"><br></div>
+        <div class="input ">
+         <label class=" v ">
+            <img src="image/dice-1.png" alt="#" class="i1 b hidden " style="height: 100px; width: 100px;">
+            <img src="image/dice-2.png" alt="#" class="i2 b hidden" style="height: 100px; width: 100px;">
+            <img src="image/dice-3.png" alt="#" class="i3 b hidden" style="height: 100px; width: 100px;">
+            <img src="image/dice-4.png" alt="#" class="i4 b hidden" style="height: 100px; width: 100px;">
+            <img src="image/dice-5.png" alt="#" class="i5 b hidden" style="height: 100px; width: 100px;">
+            <img src="image/dice-6.png" alt="#" class="i6 b hidden" style="height: 100px; width: 100px;">
+
+         </label> 
         </div>
        <div class="roll">
-            <input type="submit" value="Roll dice" style="width: 150px; height: 40px; border-radius: 10px; cursor: pointer;">
+            <input type="button" value="Roll dice" class="r1" style="width: 150px; height: 40px; border-radius: 10px; cursor: pointer;">
        </div>
         <div class="p1">
     <h1 class="pl1"> player 1</h1>
-    <div class="disp1">0</div>
+    <div class="disp1"> <span class="d1">0</span></div>
+    <label class="p1s"> current <span class="c1" style="margin-left:40px;">0</i></label>
         </div>
         <div class="p2">
     <h1 class="pl2"> player 2</h1>
-    <div class="disp2">0</div>
+    <div class="disp2"> <span class="d2">0</span></div>
+    <label class="p2s"> current <span class="c2" style="margin-left:40px;">0</i></label>
+        </div>
+        <div class="hold">
+            <input type="button" class="h1" value="hold" style="height: 30px; width: 100px; border-radius: 10px;cursor: pointer;"> 
         </div>
 </div>
 </body>
+<script src="/pig.game/java.js"></script>
 </html>

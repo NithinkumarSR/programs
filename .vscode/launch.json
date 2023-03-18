@@ -5,6 +5,34 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "findstring",
+            "request": "launch",
+            "mainClass": "java1.findstring",
+            "projectName": "programs_d25b0f35"
+        },
+        {
+            "type": "java",
+            "name": "sumofalldigit",
+            "request": "launch",
+            "mainClass": "java1.sumofalldigit",
+            "projectName": "programs_d25b0f35"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "java1.Main",
+            "projectName": "programs_d25b0f35"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "java.Main",
+            "projectName": "programs_d25b0f35"
+        },
+        {
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",

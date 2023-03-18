@@ -46,12 +46,12 @@ body{
     margin-left: 140px;
 }
 .disp1{
-    font-size: 50px;
-    margin: 50px 0px 0px 150px;
+    font-size: 100px;
+    margin: 100px 0px 0px 150px;
 }
 .disp2{
-    font-size: 50px;
-    margin: 50px 0px 0px 150px;
+    font-size: 100px;
+    margin: 100px 0px 0px 150px;
 }
 .dice{
     width: 100px;
@@ -60,10 +60,14 @@ body{
 .input{
    /* padding-left:765px; */
    position: absolute;
+   border: 1px solid black;
+   width: 100px;
+   height: 100px;
   top: 200px;
-   /* right: 100%; */
-   /* bottom: 50%; */
    left: 350px;
+   /* background-color: aliceblue; */
+   /* image:"pig.game/image/dice-1.png" ; */
+
 }
 .new{
     position: absolute;
@@ -74,4 +78,33 @@ body{
     position: absolute;
     left :320px;
     top:450px;
+}
+.p1s{
+    position: absolute;
+    top: 430px;
+    left: 150px;
+    border:1px solid black;
+    background-color: aliceblue;
+    font-size: 30px;
+    height: 100px;
+    width: 100px;
+}
+.p2s{
+    position: absolute;
+    top: 430px;
+    left: 580px;
+    font-size: 30px;
+    border:1px solid black;
+    background-color: aliceblue;
+    height: 100px;
+    width: 100px;
+}
+.hold{
+    position: absolute;
+    top: 600px;
+    left: 350px;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
 }
