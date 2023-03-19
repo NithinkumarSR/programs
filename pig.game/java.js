@@ -2,19 +2,33 @@
 let c=0;
 let res=0;
 let ch=0;
-document.querySelector('.n').addEventListener('click',function(){
+const w=function(){
+let a;
+
+if(Number(document.querySelector(y).textContent)>10||Number(document.querySelector(z).textContent>10)){
+    document.querySelector('.player').classList.add('hidden');
+    document.querySelector('.win').classList.remove('hidden');
+    if(z==='.c1') a=1;
+else a=2;
+    document.querySelector('.wp').textContent=`player ${a} win`;
+}
+}
+const n=function(){
     document.querySelector('.d1').textContent=0;
     document.querySelector('.d2').textContent=0;
-    document.querySelector('.b').classList.add('hidden');
-})
+    document.querySelector('.c1').textContent=0;
+    document.querySelector('.c2').textContent=0;
+    document.querySelector('img').classList.add('hidden');
+}
+document.querySelector('.n').addEventListener('click',n);
 let x,y,z;
 y='.d1'
 z='.c1'
 document.querySelector('.h1').addEventListener('click',function(){
+    w();
     c=0;
      let sum=Number(document.querySelector(y).textContent)+Number(res);
   document.querySelector(y).textContent=sum;
-  console.log(document.querySelector(y).textContent);
   document.querySelector('.c1').textContent=0;
   document.querySelector('.c2').textContent=0;
   if(ch===1){
@@ -32,51 +46,27 @@ else{
     res=0;
 }
 })
+const img=document.querySelector('.img');
 const inc=function(){
-  let c=Math.trunc(Math.random()*4)+1;
-  res+=Number(c) ;
-  let sh;
-   document.querySelector(z).innerHTML=res;
-//    if(document.querySelector('.v').classList.contains('hidden')){
-//     document.querySelector('.v').classList.remove('hidden');
-//    }
-//    if(c==1){
-//     document.querySelector('.i1').classList.remove('hidden');
-    
-//    }
-//    else if(c==2){
-//     // document.querySelector('.b').classList.add('hidden');
-//    document.querySelector('.i2').classList.add('hidden');
-  
-//    }
-//    else {
-//     document.querySelector('.i3').classList.add('hidden');
-//    }
-   
-//     // document.querySelector('.v').classList.add('hidden')
-if(c==1){
-    if(!document.querySelector('.b').classList.contains('hidden')){
-        document.querySelector('.b').classList.add('hidden');
+  let c=Math.trunc(Math.random()*6)+1;
+   img.src=`image/dice-${c}.png`;
+   img.classList.remove('hidden')
+   if(c===1){
+    document.querySelector(z).textContent=0;
+    c=0;
+    res=0;
     }
-       document.querySelector('.i1').classList.remove('hidden');
-} 
-if(c==2){
-    if(!document.querySelector('.b').classList.contains('hidden')){
-        document.querySelector('.b').classList.add('hidden');
-    }
-    document.querySelector('.i2').classList.remove('hidden');
-}
-if(c==3){
-    if(!document.querySelector('.b').classList.contains('hidden')){
-        document.querySelector('.b').classList.add('hidden');
-    }
-    document.querySelector('.i3').classList.remove('hidden');
-}
-if(c==4){
-    if(!document.querySelector('.b').classList.contains('hidden')){
-        document.querySelector('.b').classList.add('hidden');
-    }
-    document.querySelector('.i4').classList.remove('hidden');
-}
+    res+=Number(c) ;
+    document.querySelector(z).innerHTML=res;
+    w();
 }
 document.querySelector('.r1').addEventListener('click',inc);
+document.addEventListener('keydown',function(e){
+    if(e.key==="Enter"){
+        document.querySelector('.player').classList.remove('hidden');
+      
+        document.querySelector('.win').classList.add('hidden');
+        n();
+      }
+    }
+  )

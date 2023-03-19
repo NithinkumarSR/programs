@@ -3,21 +3,31 @@
     margin: 0%;
    
 }
-body{
-    background-color: rgb(97, 61, 94);
-}
+/* body{
+    background-color: rgb(95, 137, 185);
+} */
 .player{
     position: relative;
    margin-top: 100px;
-    margin-left: 400px;
-    border: solid black 1px;
+    margin-left: 500px;
+    border: solid hsl(0, 7%, 11%) 1px;
     border-radius: 10px;
     height: 700px;
     display: flex;
     width: 800px;
     flex-direction: row;
     justify-content: space-between;
+    box-shadow: 1px 1px 1px (207,147,165);
     /* padding: 100px 100px 0px 120px; */
+}
+.win{
+    position: absolute;
+    width: 800px;
+    height: 700px;
+   background-color: rgb(209, 196, 196);
+    margin-top: 100px;
+    margin-left: 500px;
+    box-shadow: 10px 0px 8px #97858566;
 }
 .p1{
     /* position: absolute; */
@@ -25,7 +35,7 @@ body{
     width: 50%;
     border-bottom-left-radius:10px;
     border-top-left-radius:10px;
-    background-color: rgb(165, 119, 119);
+    background-color: rgb(119, 147, 165);
     /* margin-top: ; */
 }
 .p2{
@@ -34,7 +44,7 @@ body{
     width: 50%;
     border-bottom-right-radius:10px;
     border-top-right-radius:10px;
-    background-color: rgb(121, 120, 133);
+    background-color: rgb(207, 141, 202);
 }
 .pl1{
     margin-top: 50px;
@@ -58,16 +68,13 @@ body{
     height: 100px;
 }
 .input{
-   /* padding-left:765px; */
+   
    position: absolute;
-   border: 1px solid black;
+ 
    width: 100px;
    height: 100px;
   top: 200px;
    left: 350px;
-   /* background-color: aliceblue; */
-   /* image:"pig.game/image/dice-1.png" ; */
-
 }
 .new{
     position: absolute;
@@ -82,22 +89,22 @@ body{
 .p1s{
     position: absolute;
     top: 430px;
-    left: 150px;
-    border:1px solid black;
-    background-color: aliceblue;
+    left: 120px;
+    border:2px solid rgb(212, 199, 199);
     font-size: 30px;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 140px;
+    border-radius: 10px;
 }
 .p2s{
     position: absolute;
     top: 430px;
-    left: 580px;
+    left: 550px;
     font-size: 30px;
-    border:1px solid black;
-    background-color: aliceblue;
-    height: 100px;
-    width: 100px;
+    border:2px solid rgb(233, 220, 220);
+    height: 80px;
+    width: 140px;
+    border-radius: 10px;
 }
 .hold{
     position: absolute;
@@ -107,4 +114,10 @@ body{
 }
 .hidden{
     display: none;
+}
+.wp{
+    position: absolute;
+    margin-top: 250px;
+    font-size: 80px;
+    left: 150px;
 }
