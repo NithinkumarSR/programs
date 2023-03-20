@@ -13,14 +13,14 @@ else a=2;
     document.querySelector('.wp').textContent=`player ${a} win`;
 }
 }
-const n=function(){
+document.querySelector('.n').addEventListener('click',function(){
+    res=0;
     document.querySelector('.d1').textContent=0;
     document.querySelector('.d2').textContent=0;
     document.querySelector('.c1').textContent=0;
     document.querySelector('.c2').textContent=0;
     document.querySelector('img').classList.add('hidden');
-}
-document.querySelector('.n').addEventListener('click',n);
+});
 let x,y,z;
 y='.d1'
 z='.c1'
@@ -51,13 +51,14 @@ const inc=function(){
   let c=Math.trunc(Math.random()*6)+1;
    img.src=`image/dice-${c}.png`;
    img.classList.remove('hidden')
+   res+=Number(c) ;
+   document.querySelector(z).innerHTML=res;
    if(c===1){
     document.querySelector(z).textContent=0;
     c=0;
     res=0;
     }
-    res+=Number(c) ;
-    document.querySelector(z).innerHTML=res;
+   
     w();
 }
 document.querySelector('.r1').addEventListener('click',inc);
