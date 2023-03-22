@@ -7,12 +7,12 @@ margin: 0;
    
 }
 .box{ 
-    border: solid black 2px;
+    border: solid black 3px;
     margin-top: 20px;
     width: 350px;
     height: 500px;
     border-radius: 30px;
-    margin-left: 37%;
+    margin-left: 39%;
     background-color: aqua;
 }
 #display{
@@ -37,6 +37,6 @@ padding: 10px;
 
 }
 .btn:hover{
-    background-color: rgb(247, 0, 255);
-    box-shadow: 0px,0px,5px rgb(128, 8, 122),0px,0px,250px rgb(255, 0, 242);
+    background-color: rgb(0, 204, 255);
+    box-shadow: 0px,0px,5px rgb(63, 11, 131),0px,0px,250px rgb(80, 77, 119);
 }
